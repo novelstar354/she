@@ -89,7 +89,7 @@
       return;
     }
     const ok = containsJapanese(text);
-    res.textContent = ok ? '入力に日本語が含まれています（日本語判定: OK）。\n\n-> エコー結果:\n' + text : '入力に日本語が含まれていません。\n\n-> エコー結果:\n' + text;
+    res.textContent = ok ? '入力に日本語が含まれています（日本語判定: OK）。\n\n-> 翻訳結果:\n' + text : '入力に日本語が含まれていません。\n\n-> 翻訳結果:\n' + text;
     res.dataset.detected = ok ? 'ja' : 'none';
   });
 
